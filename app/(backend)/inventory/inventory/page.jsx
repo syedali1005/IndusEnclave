@@ -8,36 +8,28 @@ import React from "react";
 export default function Inventory() {
   const optionCards =[
     {
-      title: "Property Groups",
-      description: "Organize future assets as cohesive property bundles",
-      link: "/new",
-      linkTitle: "New Property Group",
-      enabled: true,
-      icon: Boxes,
-    },
-    {
       title: "Properties",
       description: "Buy your future assets as a property",
-      link: "/new",
+      link: "/inventory/inventory/properties/new",
       linkTitle: "New Property",
       enabled: true,
       icon: Landmark,
     },
     {
-      title: "Bundle",
+      title: "Categories",
       description: "Bundle different plots together",
-      link: "/new",
-      linkTitle: "Bundle of Properties",
-      enabled: false,
-      icon: Component,
+      link: "/inventory/inventory/categories/new",
+      linkTitle: "Categories",
+      enabled: true,
+      icon: ScrollText,
     },
     {
-      title: "Price Lists",
+      title: "Blocks",
       description: "Tweak your plot prices for specific transactions",
-      link: "/new",
-      linkTitle: "Bundle of Properties",
-      enabled: false,
-      icon: ScrollText,
+      link: "/inventory/inventory/blocks/new",
+      linkTitle: "New Blocks",
+      enabled: true,
+      icon: Boxes,
     },
   ]
   return (

@@ -7,6 +7,7 @@ import { Plus, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { NextResponse } from "next/server"; // Correct import
 
 export default function NewCategory() {
   const {
@@ -16,6 +17,7 @@ export default function NewCategory() {
     formState: { errors },
   } = useForm();
   const [loading, setLoading] = useState(false);
+
   async function onSubmit(data) {
     console.log(data)
     setLoading(true)
@@ -38,10 +40,11 @@ export default function NewCategory() {
       console.log(error)
     }
   }
+
   return (
     <div>
       {/* Header */}
-      <FormHeader title="New Category" href="#" />
+      <FormHeader title="New Category" href="/inventory/inventory" />
       {/* Form */}
       <form
         onSubmit={handleSubmit(onSubmit)}

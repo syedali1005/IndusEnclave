@@ -5,10 +5,10 @@ export async function POST(request) {
     const { title, description } = await request.json();
     const category = { title, description };
     console.log(category);
-    return new NextResponse().json(category); // Create an instance of NextResponse and call json method
+    return NextResponse.json(category); // Use json method to send JSON response
   } catch (error) {
     console.log(error);
-    return new NextResponse().json(
+    return NextResponse.json(
       {
         error,
         message: "Failed to create a category",

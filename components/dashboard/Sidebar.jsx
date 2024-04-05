@@ -20,19 +20,19 @@ export default function Sidebar() {
   const inventoryLinks = [
     {
       title: "Properties",
-      href: "/inventory/inventory/properties/new",
+      href: "/inventory/inventory",
     },
     {
       title: "Categories",
-      href: "/inventory/inventory/categories/new",
+      href: "/inventory/inventory",
     },
     {
       title: "Blocks",
-      href: "/inventory/inventory/blocks/new",
+      href: "/inventory/inventory",
     },
     {
       title: "Adjustments",
-      href: "/inventory/inventory/adjustments",
+      href: "/inventory/inventory",
     },
   ];
   const salesLinks = [
